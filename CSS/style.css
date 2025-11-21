@@ -1,0 +1,159 @@
+.navbar-brand {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #1e3544; 
+}
+
+.text-brand {
+  color: #1e3544 !important;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto; /* este nos ayuda a empuja el footer al fondo */
+    background: #1E3544;
+
+}
+
+.social-icon {
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.15);
+}
+
+
+/* ---------- Estilos del video -------------- */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 550px; /* Esete nos ayuda ajusta la altura del contenedor (más pequeño) */
+  overflow: hidden;
+  border-radius: 15px; /* Bordes redondeados elegantes */
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45); /* Oscurece menos para que se vea el video */
+  z-index: 2;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el texto dentro del video */
+  z-index: 3;
+  width: 80%;
+}
+
+
+/* --- Ajuste general de la tarjeta --- */
+.card {
+    border-radius: 15px;
+    overflow: visible;         /* mantiene todo dentro sin desordenar */
+}
+
+/* --- Ajuste de la imagen --- */
+.card-img-top {
+    width: 100%;
+    height: auto;                /* que tome su altura natural */
+    object-fit: contain;         /* NO recorta */
+    background-color: #f5f5f5;   /* relleno suave si la imagen no llena todo */
+    padding: 10px;               /* para que no quede pegada al borde */
+    border-radius: 15px;
+}
+
+
+/* --- Ajuste del texto --- */
+.card-body {
+    padding: 20px;       /* hace que todo quede más compacto */
+}
+
+.card-title {
+    font-size: 1.1rem;       /* más compacto */
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+/* --- Íconos --- */
+.card-body a i {
+    font-size: 1.4rem;
+}
+
+.foto-wrapper {
+    width: 100%;
+    height: 350px;   /* ⬅️ antes 260px */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.foto-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Para que el zoom respetado no recorte el borde del wrapper */
+.foto-wrapper img.zoom-out {
+    transform-origin: center top; 
+}
+
+/* Ajustes específicos para las dos primeras fotos */
+.img-ajuste-1,
+.img-ajuste-2 {
+    object-fit: cover !important;   /* llena el espacio como las otras 2 */
+    object-position: top center;    /* sube el encuadre para mostrar la cara */
+}
+
+/* Correcciones individuales */
+.img-ajuste-1 {
+    object-position: 50% 15%;   /* Ajuste fino para Sebastián Leiva */
+}
+
+.img-ajuste-2 {
+    object-position: 50% 20%;   /* Ajuste fino para Mario Jiménez */
+}
+
+/* ALEJAR IMÁGENES QUE ESTÁN MUY ZOOMED-IN */
+.zoom-body {
+    object-fit: cover;
+    transform: scale(0.999);       /* 🔥 Aquí alejas la foto: más cuerpo */
+    transform-origin: center top; /* Mantiene la cara arriba y visible */
+}
+
