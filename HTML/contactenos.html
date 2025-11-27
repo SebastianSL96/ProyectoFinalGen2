@@ -10,7 +10,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactenos.css">
+
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        .centered-card {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f2f5;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -51,6 +69,64 @@
             </div>
         </nav>
     </div>
+
+    <!--------------------------------Formulario de contactenos----------------------------------->
+    <!-- <div class="centered-card">
+        <div class="card shadow" style="width: 30rem;">
+            <div class="card-body">
+                <h4 class="card-title text-center mb-4">Formulario de contacto</h4>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="archivo" class="form-label">Adjuntar archivo <small>(jpg, png, jpeg,
+                                pdf)</small></label>
+                        <input class="form-control" type="file" id="archivo" name="archivo"
+                            accept=".jpg,.jpeg,.png,.pdf" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+                <div id="respuesta" class="mt-3"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="title">Cuentanos tu experiencia</div>
+        <form action="#">
+            <div class="form-group">
+                <span>Nombre</span>
+                <input type="text" placeholder="Ingrese nombre">
+            </div>
+
+            <div class="form-group">
+                <span>Correo electrónico</span>
+                <input type="text" placeholder="Ingrese email">
+            </div>
+
+            <div class="form-group">
+                <span>Telefono</span>
+                <input type="text" placeholder="Ingrese telefono">
+            </div>
+
+            <div class="form-group">
+                <span>Mensaje</span>
+                <input type="text" placeholder="Escriba su mensaje">
+            </div>
+
+            <div class = "button">
+                <input type="button" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+
 
     <!-------------------------------------  Footer  -------------------------------------------->
 
@@ -100,11 +176,15 @@
     </footer>
 
 
-    <script src="script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script src="Formulario.js"></script>
 </body>
 
 </html>
